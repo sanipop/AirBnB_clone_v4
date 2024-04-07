@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  // task 3
+  // 3-hbnb.js
   $.ajax('http://0.0.0.0:5001/api/v1/status').done(function (data) {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
@@ -8,7 +8,7 @@ window.addEventListener('load', function () {
     }
   });
 
-  // task 2
+  // 2-hbnb.js
   const amenityIds = {};
   $('input[type=checkbox]').click(function () {
     if ($(this).prop('checked')) {
@@ -23,7 +23,7 @@ window.addEventListener('load', function () {
     }
   });
 
-  // task 4
+  // 4-hbnb.js
   $.ajax({
     type: 'POST',
     url: 'http://0.0.0.0:5001/api/v1/places_search/',
