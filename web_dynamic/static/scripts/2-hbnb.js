@@ -1,5 +1,5 @@
 window.addEventListener('load', function () {
-  // task 3
+  // 2-hbnb.js
   $.ajax('http://0.0.0.0:5001/api/v1/status').done(function (data) {
     if (data.status === 'OK') {
       $('#api_status').addClass('available');
